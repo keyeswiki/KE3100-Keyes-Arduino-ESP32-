@@ -321,5 +321,239 @@ void loop() {
 7\. 打印窗口。
 
 
+## 4.2.9 Arduino基础代码介绍
 
+### 4.2.9.1 Arduino IDE 的开发语言
 
+Arduino使用C/C++编写程序，虽然C++兼容C语言，但这是两种语言，C语言是一种面向过程的编程语言，C++是一种面向对象的编程语言。早期的Arduino核心库使用C语言编写，后来引进了面向对象的思想，目前最新的Arduino核心库采用C与C++混合编写而成。
+
+通常所说的Arduino语言，就是指Arduino核心库提供的各种API的集合。这些API是对更底层的单片机支持库进行二次封装所形成的（玩过单片机的人估计都是经常和各种寄存器打交道）。Arduino提供的API可以让初学者不用理会单片机复杂寄存器配置，然后就能直观控制Arduino，提高开发效率。
+
+### 4.2.9.2 程序结构
+
+arduino包括两个主要函数：
+
+`void setup(){}` 当代码开始运行时，将调用 setup（）函数。使用它来初始化变量、引脚模式、开始使用库等。setup（）函数只会在Arduino板每次通电或重置后运行一次。 
+
+`void loop(){}` 相当于死循环while(1){}。 当然，可以自定义函数，并在以上两个函数中被调用。注意，setup函数和loop函数是必不可少的，否则会报错。
+
+### 4.2.9.3 基础语句
+
+#### 4.2.9.3.1 delay(value) ;
+
+delay() 延时函数，用于程序中需要等待的地方  语句：`delay(value)`
+
+**value**： 延时时间数值(单位是ms)， 1s = 1000ms  ， 1ms = 1000 us ，一般我们使用的ms
+
+#### 4.2.9.3.2 digitalWrite(Pin,State);
+
+digitalWrite() 函数用于控制指定引脚输出高电平（HIGH）或低电平（LOW） 语句：`digitalWrite(pin, value)`
+
+- **pin**： the Arduino pin number
+- **value**：HIGH or LOW
+
+#### 4.2.9.3.3 digitalRead(Pin)
+
+digitalRead(Pin); 用于读取数字引脚的TTL电平，高电平（1），低电平（0） 语句：`digitalRead(Pin);`
+
+**Pin:**需要读取的数字引脚
+
+#### 4.2.9.3.4 analogWrite(Pin,Vlaue)
+
+analogWrite() 函数将模拟值（PWM波）输出。可用于以不同的亮度点亮LED或以不同的速度驱动电机。在调用analogWrite（）后，该引脚将生成指定占空比的稳定矩形波，直到下一次在同一引脚上调用analogWrite（）（或调用digitalRead（）或digitalWrite（））。 语句：`analogWrite(pin, value)`
+
+- **pin:** the Arduino pin to write to. Allowed data types:int
+- **value:** the duty cycle: between 0 (always off) and 255 (always on). Allowed data types:int
+
+#### 4.2.9.3.5 analogRead(Pin)
+
+前面我们学了读取数字信号的函数，而analogRead(); 是读取模拟信号的函数,ESP32模拟值范围是0-4095  语句： `analogRead(Pin);`
+
+**Pin:**读取模拟值的引脚号
+
+#### 4.2.9.3.6 pinMode(Pin,mode)
+
+pinMode() 用于将指定的引脚设置成输入或输出或上拉  语法；`pinMode(pin, mode)`
+
+- **pin**: the Arduino pin number to set the mode of.
+- **mode**:INPUT,OUTPUT, or INPUT_PULLUP
+
+#### 4.2.9.3.7 if(){...}else{}
+
+if() 用于判断条件是否满足如果条件满足则执行 “{ }”中的代码，如果条件不满足则不执行
+
+else 是否则的条件，当if的判断表达式不成立时则执行else “{ }”中的代码
+
+#### 4.2.9.3.8 for()
+
+`for`语句是一种基本的循环控制结构，它允许你重复执行一段代码块固定的次数。`for`语句特别适用于已知循环次数的场景。
+
+`for`语句的基本结构
+
+```c
+for (初始化表达式; 条件表达式; 迭代表达式) {  
+    // 循环体：要重复执行的代码块  
+}
+```
+
+- **初始化表达式**：在循环开始前执行，通常用于初始化一个或多个循环控制变量。
+- **条件表达式**：在每次循环迭代前检查。如果条件为真（非零），则执行循环体；如果为假（零），则退出循环。
+- **迭代表达式**：在每次循环迭代结束时执行，通常用于更新循环控制变量。
+
+![a49](./media/a49.jpg)
+
+①：设置循环初始值，只是执行一遍，执行后进入②
+
+②： 判断是否瞒住循环条件，如图中`i <= 255`则是i小于等于255就能进入循环代码③中
+
+③： 循环代码，将需要循环的代码放到这里，如我们这个代码是需要控制pwm值从0到255所以我们只需将i的值当初pwm值即可然后进入④
+
+④： i++ 是i在原来的值上再加一的操作等于 i = i + 1 （i- -则是等效 i = i - 1），执行完后进入⑤
+
+⑤： i的值加一（或减一）后接着判断i的值是否小于等于255，如果是则继续进入循环代码③，如果不是则退出for循环
+
+#### 4.2.9.3.9 while(condition){…}
+
+while循环将连续无限循环，直到括号（）内的表达式变为false。必须更改测试变量，否则while循环将永远不会退出。这可能是在你的代码中，比如一个递增的变量，也可能是一个外部条件，比如测试传感器。
+
+#### 4.2.9.3.10 “>,<,<=,>=,==,!=”比较运算符
+
+请注意，您可能会比较不同数据类型的变量，但这可能会产生不可预测的结果，因此建议比较相同数据类型（包括有符号/无符号类型）的变量。
+
+(1): `>`将左侧的变量与运算符右侧的值或变量进行比较。当左侧的操作数大于右侧的操作数时，返回true，否则返回false。
+
+​	语法：
+
+```c++
+x > y; // is true if x is bigger than y and it is false if x is equal or smaller than y
+```
+
+(2): `>=`将左侧的变量与运算符右侧的值或变量进行比较。当左侧的操作数大于或等于右侧的操作数时，返回true，否则返回false。
+
+语法：
+
+```c++
+x >= y; // is true if x is bigger than or equal to y and it is false if x is smaller than y
+```
+
+(3): `<`将左侧的变量与运算符右侧的值或变量进行比较。当左侧的操作数小于右侧的操作数时，返回true，否则返回false。
+
+语法：
+
+```c++
+x < y; // is true if x is smaller than y and it is false if x is equal or bigger than y
+```
+
+(4): `<=`将左侧的变量与运算符右侧的值或变量进行比较。当左侧的操作数小于或等于右侧的操作数时，返回true，否则返回false。
+
+语法：
+
+```c++
+x <= y; // is true if x is smaller than or equal to y and it is false if x is greater than y
+```
+
+(5): `==`将左侧的变量与运算符右侧的值或变量进行比较。当两个操作数相等时，返回true，否则返回false。(注意判断两个值是否相等是“==”)
+
+语法：
+
+```c++
+x == y; // is true if x is equal to y and it is false if x is not equal to y
+```
+
+(6): `!=`将左侧的变量与运算符右侧的值或变量进行比较。当两个操作数不相等时，返回true，否则返回false。
+
+语法：
+
+```c++
+x != y; // is false if x is equal to y and it is true if x is not equal to y
+```
+
+#### 4.2.9.3.11 “+,-,*,/,%,=”算数运算符
+
+(1):  `+`加法是四种主要算术运算之一。运算符+（加号）对两个操作数进行运算以产生总和。
+
+​	语法：`sum = operand1 + operand2;`
+
+(2):  `-`减法是四种主要算术运算之一。运算符-（减号）对两个操作数进行运算，以产生第二个操作数与第一个操作数的差值。
+
+​	语法：`difference = operand1 - operand2;`
+
+(3):  `*`乘法是四种主要算术运算之一。运算符“*”（星号）对两个操作数进行运算以产生乘积。
+
+​	语法：`product = operand1 * operand2;`
+
+(4):  `/`除法是四种主要算术运算之一。运算符“/”（斜线）对两个操作数进行操作以产生结果。
+
+​	语法：`result = numerator / denominator;`
+
+(5): `%`余数运算计算一个整数除以另一个整数时的余数。它有助于将变量保持在特定范围内（例如数组的大小）。“%”（百分比）符号用于执行余数运算。
+
+​	 语法：`remainder = dividend % divisor;`
+
+(6): `=`在C++编程语言中，单个等号“=”被称为赋值运算符。它与代数课中表示方程或等式的意义不同。赋值运算符告诉微控制器评估等号右侧的任何值或表达式，并将其存储在等号左侧的变量中。
+
+示例：
+
+```c++
+int sensVal;              // declare an integer variable named sensVal
+    sensVal = analogRead(0);  // store the (digitized) input voltage at analog pin 0 in SensVal
+```
+
+#### 4.2.9.3.12 “||,&&，!”布尔运算符
+
+(1): `||`如果两个操作数中的任何一个为真，则逻辑OR的结果为真。
+
+​	示例：
+
+```c++
+if (x > 0 || y > 0) { // if either x or y is greater than zero
+      // statements
+    }
+```
+
+(2): `&&`只有当两个操作数都为真时，逻辑AND的结果才为真。
+
+​	示例：
+
+```c++
+if (digitalRead(2) == HIGH && digitalRead(3) == HIGH) { // if BOTH the switches read HIGH
+      // statements
+    }
+```
+
+#### 4.2.9.3.13 #include
+
+#include用于在草图中包含外部库。这使程序员可以访问大量标准C库（预制函数组），以及专门为Arduino编写的库。
+
+​	语法：`#include <LibraryFile.h>` 或 `#include "LocalFile.h"`
+
+#### 4.2.9.3.14 #define
+
+ #define 用于设置常量（值不变得量叫常量）  语法：`#define constantName value`
+
+- **constantName:** the name of the macro to define
+- **value:** the value to assign to the macro
+
+#### 4.2.9.3.15 Serial.begin(9600)
+
+Serial.begin(9600);设置串口波特率，只有设置了串口波特率并且与串口打印工具保持一样的波特率才能进行串口打印。一般常用9600与115200
+
+#### 4.2.9.3.16 Serial.print()
+
+Serial.print(); 串口不换行打印函数，打印时执行将变量或者需要打印的字符输入到括号中（打印字符需要放到双引号中）
+
+#### 4.2.9.3.17 Serial.println()
+
+Serial.println(); 串口换行打印函数，打印时执行将变量或者需要打印的字符输入到括号中（打印字符需要放到双引号中）
+
+#### 4.2.9.3.18 int
+
+`int` 用于声明整形变量，如`int i = 0;`就是声明了一个整形的变量，变量名为i值为0；整形可以理解成整数的意思
+
+#### 4.2.9.3.19 char
+
+`char` 用于声明字符变量，如`char ch = ‘A’`就是声明了一个字符变量，变量名为ch值为‘A’
+
+更多详细解释请参考官方链接：[Language Reference | Arduino Documentation](https://docs.arduino.cc/language-reference/#variables)
+
+---------------

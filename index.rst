@@ -9,7 +9,7 @@
    docs/3.参考链接
    docs/ESP32主控板
    docs/智慧农场组装/智慧农场组装
-   docs/Arduino_C_教程/Arduino_C_教程
+   docs/Arduino教程/4.Arduino教程
    docs/KidsBlock(Scratch)_教程/KidsBlock(Scratch)_教程
    docs/Mixly_教程/Mixly_教程
 

@@ -9,11 +9,11 @@ Arduino IDE拥有简洁直观的用户界面，支持语法高亮、自动完成
 
 总之，Arduino IDE以其初学者友好的界面和强大的开源代码支持，成为了Arduino开发者不可或缺的工具之一，无论是初学者还是专业人士，都能从中受益。
 
-## 4.2.2 下载 Arduino IDE
+## 4.2.2  Windows 系统
 
 **特别提醒：本教程采用的 Arduino IDE 版本是 2.3.6 。如果是其他版本的话，不能保证本教程提供的示例代码能编译和上传成功。** 
 
-### 4.2.2.1 Windows 系统
+### 4.2.2.1 Arduino IDE下载 
 
 我们先到Arduino官方的网站：[Software | Arduino](https://www.arduino.cc/en/software/) 下载 Arduino IDE。
 
@@ -27,25 +27,7 @@ Arduino 软件有很多版本，有Windows，Mac，Linux系统的（如下图）
 
 一般情况下，我们点击`JUST DOWNLOAD`就可以下载了，当然，如果你愿意，你可以选择小小的赞助一下，以帮助伟大的Arduino 开源事业。
 
-### 4.2.2.2 Mac 系统
-
-我们先到Arduino官方的网站：[Software | Arduino](https://www.arduino.cc/en/software/) 下载 Arduino IDE。
-
-不同的系统，需要下载不同的Arduino IDE，下载方式和Windows类似。选择如下图。
-
-![](./media/a4.png)
-
-### 4.2.2.3 Linux 系统
-
-我们先到Arduino官方的网站：[Software | Arduino](https://www.arduino.cc/en/software/) 下载 Arduino IDE。
-
-不同的系统，需要下载不同的Arduino IDE，下载方式和Windows类似。选择如下图。
-
-![Img](./media/a4-1.png)
-
-## 4.2.3 安装Arduino IDE
-
-### 4.2.3.1 Windows 系统
+### 4.2.2.1 Arduino IDE安装
 
 1\. 保存从软件页面下载的.exe文件到硬盘驱动器，然后简单地运行该文件.
 
@@ -67,17 +49,37 @@ Arduino 软件有很多版本，有Windows，Mac，Linux系统的（如下图）
 
 ![a9](./media/a9.png)
 
-### 4.2.3.2 Mac 系统
+## 4.2.3 MacOS 系统
 
-双击下载的`arduino_ide_xxxx.dmg`文件并按照说明将 **Arduino IDE.app** 复制到 **Applications** 文件夹，几秒钟后您将看到 Arduino IDE 安装成功.
+### 4.2.3.1 Arduino IDE下载
+
+我们先到Arduino官方的网站：[Software | Arduino](https://www.arduino.cc/en/software/) 下载 Arduino IDE。
+
+不同的系统，需要下载不同的Arduino IDE，下载方式和Windows类似。选择如下图。
+
+![](./media/a4.png)
+
+### 4.2.3.2 Arduino IDE安装
+
+Arduino IDE选择之后，双击下载的`arduino_ide_xxxx.dmg`文件并按照说明将 **Arduino IDE.app** 复制粘贴到 **Applications** 文件夹，几秒钟后您将看到 Arduino IDE 安装成功.
 
 ![Img](./media/Mac.png)
 
-### 4.2.3.3 Linux 系统
+## 4.2.4 Linux 系统
+
+### 4.2.4.1 Arduino IDE下载
+
+我们先到Arduino官方的网站：[Software | Arduino](https://www.arduino.cc/en/software/) 下载 Arduino IDE。
+
+不同的系统，需要下载不同的Arduino IDE，下载方式和Windows类似。选择如下图。
+
+![Img](./media/a4-1.png)
+
+### 4.2.4.2 Arduino IDE安装
 
 关于在 Linux 系统上安装 Arduino IDE 2 的教程，请参考：[https://docs.arduino.cc/software/ide-v2/tutorials/getting-started/ide-v2-downloading-and-installing/#linux](https://docs.arduino.cc/software/ide-v2/tutorials/getting-started/ide-v2-downloading-and-installing/#linux)
 
-## 4.2.4 设置arduino IDE语言
+## 4.2.5 设置arduino IDE语言
 
 ⚠️ **特别提醒：Windows系统、MAC系统等不同系统，arduino IDE语言设置方法差不多，可以参考。**
 
@@ -93,7 +95,7 @@ Arduino 软件有很多版本，有Windows，Mac，Linux系统的（如下图）
 
 ![Img](./media/a29-2.png)
 
-## 4.2.5 Arduino IDE说明
+## 4.2.6 Arduino IDE说明
 
 ![](./media/a35.png)
 
@@ -131,11 +133,11 @@ Arduino 软件有很多版本，有Windows，Mac，Linux系统的（如下图）
 
 至此Arduino IDE说明教程结束了，请学习如何给Arduino IDE添加库文件，如果没有添加库文件IDE会报错。
 
-## 4.2.6 给Arduino IDE安装库文件(**重要**)
+## 4.2.7 给Arduino IDE安装库文件(**重要**)
 
 ⚠️ **特别提醒：Windows系统、MAC系统等不同系统，安装库文件的方法差不多，可以相互参考；这里是以Windows系统为例。**
 
-### 4.2.6.1 什么是库文件
+### 4.2.7.1 什么是库文件
 
 库是代码的集合，使您可以轻松地连接到传感器、显示器、模块等。
 
@@ -145,7 +147,7 @@ Arduino 软件有很多版本，有Windows，Mac，Linux系统的（如下图）
 
 ![a44](./media/a44.png)
 
-### 4.2.6.2 如何安装库文件
+### 4.2.7.2 如何安装库文件
 
 在这里，我们将为您介绍最简单的添加库的方法。我们是以添加LiquidCrystal_I2C库文件为例。
 
@@ -163,11 +165,11 @@ Arduino 软件有很多版本，有Windows，Mac，Linux系统的（如下图）
 
 4\. 重复相同的过程以添加其他库文件。
 
-## 4.2.7 安装 ESP32 开发板(**重要**)
+## 4.2.8 安装 ESP32 开发板(**重要**)
 
 ⚠️ **特别提醒：国内客户下载安装ESP32 开发板，由于网速原因需要网络翻墙，这样，ESP32 开发板更容易下载。**
 
-### 4.2.7.1 Windows系统
+### 4.2.8.1 Windows系统
 
 我们发现在arduino IDE “**工具**”下的 “**开发板**” 中找不到ESP32开发板的选项，这是因为我们没有添加ESP32开发板，接下来我们一起来为Arduino IDE添加ESP32开发板吧!
 
@@ -223,7 +225,7 @@ Arduino 软件有很多版本，有Windows，Mac，Linux系统的（如下图）
 
 ![Img](./media/ba10.png)
 
-### 4.2.7.2 MAC系统
+### 4.2.8.2 MAC系统
 
 上面已经学习了怎么下载ArduinoIDE和怎么安装驱动，那下面就要在Arduino IDE上安装ESP32，请执行以下步骤：
 
@@ -257,7 +259,7 @@ Arduino 软件有很多版本，有Windows，Mac，Linux系统的（如下图）
 
 ![Img](./media/ba09.png)
 
-## 4.2.8 使用Arduino IDE上传第一个程序
+## 4.2.9 使用Arduino IDE上传第一个程序
 
 先将ESP32开发板通过USB线连接到电脑。
 
@@ -322,15 +324,15 @@ void loop() {
 7\. 打印窗口。
 
 
-## 4.2.9 Arduino基础代码介绍
+## 4.2.10 Arduino基础代码介绍
 
-### 4.2.9.1 Arduino IDE 的开发语言
+### 4.2.10.1 Arduino IDE 的开发语言
 
 Arduino使用C/C++编写程序，虽然C++兼容C语言，但这是两种语言，C语言是一种面向过程的编程语言，C++是一种面向对象的编程语言。早期的Arduino核心库使用C语言编写，后来引进了面向对象的思想，目前最新的Arduino核心库采用C与C++混合编写而成。
 
 通常所说的Arduino语言，就是指Arduino核心库提供的各种API的集合。这些API是对更底层的单片机支持库进行二次封装所形成的（玩过单片机的人估计都是经常和各种寄存器打交道）。Arduino提供的API可以让初学者不用理会单片机复杂寄存器配置，然后就能直观控制Arduino，提高开发效率。
 
-### 4.2.9.2 程序结构
+### 4.2.10.2 程序结构
 
 arduino包括两个主要函数：
 
@@ -338,54 +340,54 @@ arduino包括两个主要函数：
 
 `void loop(){}` 相当于死循环while(1){}。 当然，可以自定义函数，并在以上两个函数中被调用。注意，setup函数和loop函数是必不可少的，否则会报错。
 
-### 4.2.9.3 基础语句
+### 4.2.10.3 基础语句
 
-#### 4.2.9.3.1 delay(value) ;
+#### 4.2.10.3.1 delay(value) ;
 
 delay() 延时函数，用于程序中需要等待的地方  语句：`delay(value)`
 
 **value**： 延时时间数值(单位是ms)， 1s = 1000ms  ， 1ms = 1000 us ，一般我们使用的ms
 
-#### 4.2.9.3.2 digitalWrite(Pin,State);
+#### 4.2.10.3.2 digitalWrite(Pin,State);
 
 digitalWrite() 函数用于控制指定引脚输出高电平（HIGH）或低电平（LOW） 语句：`digitalWrite(pin, value)`
 
 - **pin**： the Arduino pin number
 - **value**：HIGH or LOW
 
-#### 4.2.9.3.3 digitalRead(Pin)
+#### 4.2.10.3.3 digitalRead(Pin)
 
 digitalRead(Pin); 用于读取数字引脚的TTL电平，高电平（1），低电平（0） 语句：`digitalRead(Pin);`
 
 **Pin:** 需要读取的数字引脚
 
-#### 4.2.9.3.4 analogWrite(Pin,Vlaue)
+#### 4.2.10.3.4 analogWrite(Pin,Vlaue)
 
 analogWrite() 函数将模拟值（PWM波）输出。可用于以不同的亮度点亮LED或以不同的速度驱动电机。在调用analogWrite（）后，该引脚将生成指定占空比的稳定矩形波，直到下一次在同一引脚上调用analogWrite（）（或调用digitalRead（）或digitalWrite（））。 语句：`analogWrite(pin, value)`
 
 - **pin:** the Arduino pin to write to. Allowed data types:int
 - **value:** the duty cycle: between 0 (always off) and 255 (always on). Allowed data types:int
 
-#### 4.2.9.3.5 analogRead(Pin)
+#### 4.2.10.3.5 analogRead(Pin)
 
 前面我们学了读取数字信号的函数，而analogRead(); 是读取模拟信号的函数,ESP32模拟值范围是0-4095  语句： `analogRead(Pin);`
 
 **Pin:** 读取模拟值的引脚号
 
-#### 4.2.9.3.6 pinMode(Pin,mode)
+#### 4.2.10.3.6 pinMode(Pin,mode)
 
 pinMode() 用于将指定的引脚设置成输入或输出或上拉  语法；`pinMode(pin, mode)`
 
 - **pin**: the Arduino pin number to set the mode of.
 - **mode**: INPUT,OUTPUT, or INPUT_PULLUP
 
-#### 4.2.9.3.7 if(){...}else{}
+#### 4.2.10.3.7 if(){...}else{}
 
 if() 用于判断条件是否满足如果条件满足则执行 “{ }”中的代码，如果条件不满足则不执行
 
 else 是否则的条件，当if的判断表达式不成立时则执行else “{ }”中的代码
 
-#### 4.2.9.3.8 for()
+#### 4.2.10.3.8 for()
 
 `for`语句是一种基本的循环控制结构，它允许你重复执行一段代码块固定的次数。`for`语句特别适用于已知循环次数的场景。
 
@@ -413,11 +415,11 @@ for (初始化表达式; 条件表达式; 迭代表达式) {
 
 ⑤： i的值加一（或减一）后接着判断i的值是否小于等于255，如果是则继续进入循环代码③，如果不是则退出for循环
 
-#### 4.2.9.3.9 while(condition){…}
+#### 4.2.10.3.9 while(condition){…}
 
 while循环将连续无限循环，直到括号（）内的表达式变为false。必须更改测试变量，否则while循环将永远不会退出。这可能是在你的代码中，比如一个递增的变量，也可能是一个外部条件，比如测试传感器。
 
-#### 4.2.9.3.10 “>,<,<=,>=,==,!=”比较运算符
+#### 4.2.10.3.10 “>,<,<=,>=,==,!=”比较运算符
 
 请注意，您可能会比较不同数据类型的变量，但这可能会产生不可预测的结果，因此建议比较相同数据类型（包括有符号/无符号类型）的变量。
 
@@ -469,7 +471,7 @@ x == y; // is true if x is equal to y and it is false if x is not equal to y
 x != y; // is false if x is equal to y and it is true if x is not equal to y
 ```
 
-#### 4.2.9.3.11 “+,-,*,/,%,=”算数运算符
+#### 4.2.10.3.11 “+,-,*,/,%,=”算数运算符
 
 (1):  `+`加法是四种主要算术运算之一。运算符+（加号）对两个操作数进行运算以产生总和。
 
@@ -500,7 +502,7 @@ int sensVal;              // declare an integer variable named sensVal
     sensVal = analogRead(0);  // store the (digitized) input voltage at analog pin 0 in SensVal
 ```
 
-#### 4.2.9.3.12 “||,&&，!”布尔运算符
+#### 4.2.10.3.12 “||,&&，!”布尔运算符
 
 (1): `||`如果两个操作数中的任何一个为真，则逻辑OR的结果为真。
 
@@ -522,36 +524,36 @@ if (digitalRead(2) == HIGH && digitalRead(3) == HIGH) { // if BOTH the switches 
     }
 ```
 
-#### 4.2.9.3.13 #include
+#### 4.2.10.3.13 #include
 
 #include用于在草图中包含外部库。这使程序员可以访问大量标准C库（预制函数组），以及专门为Arduino编写的库。
 
 ​	语法：`#include <LibraryFile.h>` 或 `#include "LocalFile.h"`
 
-#### 4.2.9.3.14 #define
+#### 4.2.10.3.14 #define
 
  #define 用于设置常量（值不变得量叫常量）  语法：`#define constantName value`
 
 - **constantName:** the name of the macro to define
 - **value:** the value to assign to the macro
 
-#### 4.2.9.3.15 Serial.begin(9600)
+#### 4.2.10.3.15 Serial.begin(9600)
 
 Serial.begin(9600);设置串口波特率，只有设置了串口波特率并且与串口打印工具保持一样的波特率才能进行串口打印。一般常用9600与115200
 
-#### 4.2.9.3.16 Serial.print()
+#### 4.2.10.3.16 Serial.print()
 
 Serial.print(); 串口不换行打印函数，打印时执行将变量或者需要打印的字符输入到括号中（打印字符需要放到双引号中）
 
-#### 4.2.9.3.17 Serial.println()
+#### 4.2.10.3.17 Serial.println()
 
 Serial.println(); 串口换行打印函数，打印时执行将变量或者需要打印的字符输入到括号中（打印字符需要放到双引号中）
 
-#### 4.2.9.3.18 int
+#### 4.2.10.3.18 int
 
 `int` 用于声明整形变量，如`int i = 0;`就是声明了一个整形的变量，变量名为i值为0；整形可以理解成整数的意思
 
-#### 4.2.9.3.19 char
+#### 4.2.10.3.19 char
 
 `char` 用于声明字符变量，如`char ch = ‘A’`就是声明了一个字符变量，变量名为ch值为‘A’
 

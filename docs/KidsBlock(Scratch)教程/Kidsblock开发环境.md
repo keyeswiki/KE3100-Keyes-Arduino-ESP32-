@@ -1,13 +1,11 @@
 
-## 5.2.1 KidsBlock IDE 下载
+## 5.2.1 Windows 系统
+
+### 5.2.1.1 KidsBlock IDE 下载
 
 * [Windows 系统](https://xiazai.keyesrobot.cn/KidsBlock.exe)
 
-* [MacOS 系统](https://xiazai.keyesrobot.cn/KidsBlock.dmg)
-
-## 5.2.2 KidsBlock IDE 安装
-
-### 5.2.2.1 Windows 系统
+### 5.2.1.2 KidsBlock IDE 安装
 
 1\. 双击下载好的软件 “**KidsBlock.exe**” 。
 
@@ -33,7 +31,7 @@
 
 ![Img](./media/kidsblock-6.png)
 
-有更新软件时一般打开会自动提醒，为了软件能正常使用我们选择升级。
+有更新软件时一般打开Kidsblock IDE页面时会自动提醒，为了软件能正常使用我们选择升级。
 
 ![Img](./media/kidsblock-8.png)
 
@@ -47,7 +45,13 @@
 
 ![Img](./media/kidsblock-10.png)
 
-### 5.2.2.2 MacOS 系统
+## 5.2.2 MacOS 系统
+
+### 5.2.2.1 KidsBlock IDE 下载
+
+* [MacOS 系统](https://xiazai.keyesrobot.cn/KidsBlock.dmg)
+
+### 5.2.2.2 KidsBlock IDE 安装
 
 1\. 双击下载好的软件文件 “**KidsBlock.dmg**”。
 
@@ -76,6 +80,14 @@
 6\. 出现 “**隐私与安全性**”对话框，在对话框中输入好 “**管理员用户名**” 和 “**密码**”，然后单击 “**好**” 按钮。
 
 ![Img](./media/kidsblock-18.png)
+
+7\. 过一会儿之后，就可以打开了Kidsblock IDE页面。
+
+![Img](./media/kidsblock-19.png)
+
+有更新软件时一般打开Kidsblock IDE页面时会自动提醒，为了软件能正常使用我们选择升级。
+
+![Img](./media/kidsblock-8.png)
 
 ## 5.2.3 KidsBlock软件的使用方法
 

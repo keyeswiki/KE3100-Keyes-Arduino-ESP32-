@@ -176,7 +176,7 @@ Arduino 软件有很多版本，有Windows，Mac，Linux系统的（如下图）
 
 ![Img](./media/a30-1.png)
 
-2\. 点击“**文件** ——>**首选项...**”，在**其他开发板管理器地址**中，添加ESP32开发板链接：`https://espressif.github.io/arduino-esp32/package_esp32_index.json` ，然后单击 “**确定**”.
+2\. 点击“**文件** ——>**首选项...**”，在**其他开发板管理器地址**中，将ESP32开发板的链接：`https://espressif.github.io/arduino-esp32/package_esp32_index.json` 复制粘贴至文本框中，然后单击 “**确定**”.
 
 ![Img](./media/a30-2.png)
 
@@ -226,7 +226,7 @@ Arduino 软件有很多版本，有Windows，Mac，Linux系统的（如下图）
 
 **安装ESP32开发板步骤如下：**
 
-1\. 首先打开Arduino IDE，点击“**Arduino IDE** ——>**首选项...**”，在**其他开发板管理器地址**中，添加ESP32开发板链接：`https://espressif.github.io/arduino-esp32/package_esp32_index.json` ，然后单击 “**确定**”.
+1\. 首先打开Arduino IDE，点击“**Arduino IDE** ——>**首选项...**”，在**其他开发板管理器地址**中，将ESP32开发板的链接：`https://espressif.github.io/arduino-esp32/package_esp32_index.json` 复制粘贴至文本框中，，然后单击 “**确定**”.
 
 ![Img](./media/ba01.png)
 

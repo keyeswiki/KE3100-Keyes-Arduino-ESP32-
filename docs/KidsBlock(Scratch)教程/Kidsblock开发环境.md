@@ -1,11 +1,11 @@
 
 ## 5.2.1 Windows 系统
 
-### 5.2.1.1 KidsBlock IDE 下载
+### 5.2.1.1 KidsBlock IDE下载
 
 * [Windows 系统](https://xiazai.keyesrobot.cn/KidsBlock.exe)
 
-### 5.2.1.2 KidsBlock IDE 安装
+### 5.2.1.2 KidsBlock IDE安装
 
 1\. 双击下载好的软件 “**KidsBlock.exe**” 。
 
@@ -47,11 +47,11 @@
 
 ## 5.2.2 MacOS 系统
 
-### 5.2.2.1 KidsBlock IDE 下载
+### 5.2.2.1 KidsBlock IDE下载
 
 * [MacOS 系统](https://xiazai.keyesrobot.cn/KidsBlock.dmg)
 
-### 5.2.2.2 KidsBlock IDE 安装
+### 5.2.2.2 KidsBlock IDE安装
 
 1\. 双击下载好的软件文件 “**KidsBlock.dmg**”。
 

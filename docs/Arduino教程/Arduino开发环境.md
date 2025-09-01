@@ -25,7 +25,7 @@ Arduino 软件有很多版本，有Windows，Mac，Linux系统的（如下图）
 
 这里我们以Windows系统的为例给大家介绍下载和安装的步骤。Windows系统的也有两个版本，一个版本是安装版：Windows Win 10 or newer(64-bit) ；另一个是下载版：Windows ZIP file，是不用安装，直接下载文件到电脑，解压缩就可以用了。
 
-### 4.2.2.1 Arduino IDE安装
+### 4.2.2.2 Arduino IDE安装
 
 1\. 保存从软件页面下载的.exe文件到硬盘驱动器，然后简单地运行该文件.
 

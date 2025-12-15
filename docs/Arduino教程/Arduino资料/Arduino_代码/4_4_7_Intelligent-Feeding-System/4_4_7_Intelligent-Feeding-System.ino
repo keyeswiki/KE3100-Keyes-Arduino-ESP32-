@@ -13,8 +13,8 @@ Servo myservo;  // 创建舵机对象来控制舵机,在ESP32上可以创建16�
 // 定义引脚常量
 const int RX_PIN = 23; // 引脚 GPIO23 为 RX
 const int TX_PIN = 5; // 引脚 GPIO5 为 TX
-const int TrigPin = 12; // trig接D12
-const int EchoPin = 13; // echo接D13
+const int TrigPin = 14; // trig接GPIO14
+const int EchoPin = 13; // echo接GPIO13
 const int ServoPin = 26; // 舵机的引脚
 
 SoftwareSerial mySerial(RX_PIN, TX_PIN); // 定义软件串口引脚（RX, TX）

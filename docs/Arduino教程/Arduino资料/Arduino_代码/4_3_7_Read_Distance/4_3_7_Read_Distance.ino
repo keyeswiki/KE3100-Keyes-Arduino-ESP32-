@@ -5,8 +5,8 @@
  * 作者   : https://www.keyesrobot.cn/
 */
 // 定义超声波传感器的引脚
-const int trigPin = 12; //trig接D12
-const int echoPin = 13; //echo接D13
+const int trigPin = 14; //trig接GPIO14
+const int echoPin = 13; //echo接GPIO13
 
 // 读取传感器数据的功能原型
 float readSensorData();

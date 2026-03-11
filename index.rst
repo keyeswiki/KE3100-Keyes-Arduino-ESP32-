@@ -11,6 +11,7 @@
    docs/KidsBlock(Scratch)教程/5.KidsBlock(Scratch)教程
    docs/Mixly教程/6.Mixly教程
    docs/常见问题解答/7.常见问题解答
+   docs/8.KEYES相关产品.md
 
 
 

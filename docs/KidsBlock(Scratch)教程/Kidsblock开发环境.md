@@ -65,7 +65,7 @@
 
 ![Img](./media/kidsblock-13.png)
 
-4\. “**KidsBlock**” 在复制拷贝至 **Applications** 文件夹过程中，有可能会出现 “**安全提醒**” 框 。
+4\. “**KidsBlock**” 在复制拷贝至 **Applications** 文件夹过程中，有可能会出现 “**安全提醒**” 框。
 
 ![Img](./media/kidsblock-14.png)
 

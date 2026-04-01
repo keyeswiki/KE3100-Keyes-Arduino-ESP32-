@@ -27,24 +27,23 @@ Arduino 软件有很多版本，有Windows，Mac，Linux系统的（如下图）
 
 ### 4.2.2.2 Arduino IDE安装
 
-1\. 保存从软件页面下载的.exe文件到硬盘驱动器，然后简单地运行该文件.
+1\. 保存从软件页面下载的.exe文件到硬盘驱动器，然后简单地运行该文件。
 
 ![a5](./media/a5.png)
 
-2\. 阅读许可协议并同意.
+2\. 阅读许可协议并同意。
 
 ![a6](./media/a6.png)
 
-3\. 选择安装选项.
+3\. 选择安装选项。
 
 ![a7](./media/a7.png)
 
-4\. 选择安装位置.
+4\. 选择安装位置。
 
 ![a8](./media/a8.png)
 
-5\. 单击 "Finish" 并运行Arduino IDE
-
+5\. 单击 "Finish" 并运行Arduino IDE。
 ![a9](./media/a9.png)
 
 ## 4.2.3 MacOS 系统
@@ -59,7 +58,7 @@ Arduino 软件有很多版本，有Windows，Mac，Linux系统的（如下图）
 
 ### 4.2.3.2 Arduino IDE安装
 
-Arduino IDE下载之后，双击下载的`arduino_ide_xxxx.dmg`文件并按照说明将 **Arduino IDE.app** 复制粘贴到 **Applications** 文件夹，几秒钟后您将看到 Arduino IDE 安装成功.
+Arduino IDE下载之后，双击下载的`arduino_ide_xxxx.dmg`文件并按照说明将 **Arduino IDE.app** 复制粘贴到 **Applications** 文件夹，几秒钟后您将看到 Arduino IDE 安装成功。
 
 ![Img](./media/Mac.png)
 
@@ -85,7 +84,7 @@ Arduino IDE下载之后，双击下载的`arduino_ide_xxxx.dmg`文件并按照�
 
 ![Img](./media/ArduinoIDE.png)
 
-2\. 点击“**File** ——>**Preferences...**”，在**Preferences**对话框中，单击 “**English**” 按钮选择 “**中文(简体)**”，然后单击 “**OK**”.
+2\. 点击“**File** ——>**Preferences...**”，在**Preferences**对话框中，单击 “**English**” 按钮选择 “**中文(简体)**”，然后单击 “**OK**”。
 
 ![Img](./media/a29-1.png)
 
@@ -127,7 +126,7 @@ Arduino IDE下载之后，双击下载的`arduino_ide_xxxx.dmg`文件并按照�
 
 15\. 代码编辑区。
 
-16\. IDE提示区（上传代码报错或成功）和串口监视器显示区
+16\. IDE提示区（上传代码报错或成功）和串口监视器显示区。
 
 至此Arduino IDE说明教程结束了，请学习如何给Arduino IDE添加库文件，如果没有添加库文件IDE会报错。
 
@@ -179,7 +178,7 @@ Arduino IDE下载之后，双击下载的`arduino_ide_xxxx.dmg`文件并按照�
 
 ![Img](./media/a30-1.png)
 
-2\. 点击“**文件** ——>**首选项...**”，在**其他开发板管理器地址**中，将ESP32开发板的链接：`https://espressif.github.io/arduino-esp32/package_esp32_index.json` 复制粘贴至文本框中，然后单击 “**确定**”.
+2\. 点击“**文件** ——>**首选项...**”，在**其他开发板管理器地址**中，将ESP32开发板的链接：`https://espressif.github.io/arduino-esp32/package_esp32_index.json` 复制粘贴至文本框中，然后单击 “**确定**”。
 
 ![Img](./media/a30-2.png)
 
@@ -229,7 +228,7 @@ Arduino IDE下载之后，双击下载的`arduino_ide_xxxx.dmg`文件并按照�
 
 **安装ESP32开发板步骤如下：**
 
-1\. 首先打开Arduino IDE，点击“**Arduino IDE** ——>**首选项...**”，在**其他开发板管理器地址**中，将ESP32开发板的链接：`https://espressif.github.io/arduino-esp32/package_esp32_index.json` 复制粘贴至文本框中，，然后单击 “**确定**”.
+1\. 首先打开Arduino IDE，点击“**Arduino IDE** ——>**首选项...**”，在**其他开发板管理器地址**中，将ESP32开发板的链接：`https://espressif.github.io/arduino-esp32/package_esp32_index.json` 复制粘贴至文本框中，然后单击 “**确定**”。
 
 ![Img](./media/ba01.png)
 
@@ -267,7 +266,7 @@ Arduino IDE下载之后，双击下载的`arduino_ide_xxxx.dmg`文件并按照�
 
 ![a37](./media/a37.png)
 
-选好开发板后，选择开发板的COM口，开发板安装完驱动后会显示一个COM端口，如果你不知道是哪个，可以进入你电脑的设备管理器中进行查看，如下图：（如果你有很多COM端口，你不知道是哪个就可以拔掉ESP32开发板看哪个消失了，然后再插上ESP32开发板消失的COM口又会显示出来，如果没有COM就请检查是否有安装好开发板驱动）
+选好开发板后，选择开发板的COM口，开发板安装完驱动后会显示一个COM端口，如果你不知道是哪个，可以进入你电脑的设备管理器中进行查看，如下图：（如果你有很多COM端口，你不知道是哪个就可以拔掉ESP32开发板看哪个消失了，然后再插上ESP32开发板消失的COM口又会显示出来，如果没有COM就请检查是否有安装好开发板驱动）。
 
 ![](./media/a10.png)
 
@@ -307,7 +306,7 @@ void loop() {
 
 ![](./media/a43.png)
 
-1\. “切换自动滚动”：设置打印窗口是否跟随打印.
+1\. “切换自动滚动”：设置打印窗口是否跟随打印。
 
 2\. “切换时间戳 ”：设置是否显示打印时间。
 
